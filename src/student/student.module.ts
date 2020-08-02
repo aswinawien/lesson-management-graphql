@@ -16,6 +16,7 @@ import { LessonModule } from 'src/lesson/lesson.module';
       ],
     )
   ],
-  providers: [StudentResolver, StudentService]
+  providers: [StudentResolver, StudentService],
+  exports: [StudentService]
 })
 export class StudentModule { }

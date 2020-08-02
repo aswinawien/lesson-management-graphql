@@ -16,6 +16,6 @@ export class UserType {
     @Field()
     lastName: string;
 
-    // @Field(type => RoleEnum)
-    // role: string;
+    @Field(type => RoleEnum)
+    role: RoleEnum;
 }

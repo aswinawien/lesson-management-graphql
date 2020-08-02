@@ -27,4 +27,11 @@ export class UserEntity extends BaseEntity {
 
     @Column()
     lastName: string;
+
+    @Column({
+        enum: RoleEnum,
+        default: RoleEnum.STUDENT,
+        type: "enum"
+    })
+    role: RoleEnum;
 }

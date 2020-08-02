@@ -4,8 +4,6 @@ import { LessonType } from "src/lesson/lesson.type";
 
 
 @InputType()
-
-
 export class CreateNewStundentDto {
     @MinLength(1)
     @Field()

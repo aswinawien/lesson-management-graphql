@@ -20,7 +20,9 @@ export class SignUpAuthCredentialDto {
     @Field()
     lastName: string;
 
-    // @Field()
-    // @IsIn([RoleEnum.STUDENT, RoleEnum.TEACHER])
-    // role: RoleEnum[];
+    @Field(type => RoleEnum, {
+        defaultValue: RoleEnum.STUDENT
+    })
+    @IsIn([RoleEnum.STUDENT, RoleEnum.TEACHER])
+    role: RoleEnum;
 }
