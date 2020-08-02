@@ -1,7 +1,7 @@
 import { Resolver, Mutation, Args, Query, ObjectType, Field, ResolveField, Parent } from "@nestjs/graphql";
 import { StudentEntity } from "./student.entity";
 import { StudentService } from "./student.service";
-import { StudentType } from "./student.type";
+import { StudentType } from "./types/student.type";
 import { CreateNewStundentDto } from "./dto/create-student.dto";
 import { AssignStudentToLessonDTO } from "./dto/assign-student-to-lesson.dto";
 import { StudentToLessonType } from "./types/student-to-lesson.type";

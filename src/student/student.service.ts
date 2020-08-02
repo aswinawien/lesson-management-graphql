@@ -5,7 +5,6 @@ import { StudentEntity } from './student.entity';
 import { CreateNewStundentDto } from './dto/create-student.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { LessonRepository } from 'src/lesson/lesson.repository';
-import { StudentType } from './student.type';
 
 @Injectable()
 export class StudentService {

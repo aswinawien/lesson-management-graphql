@@ -4,6 +4,7 @@ import { GraphQLModule } from "@nestjs/graphql";
 import { LessonModule } from './lesson/lesson.module';
 import { StudentModule } from './student/student.module';
 import { typeOrmConfig } from "./config/typeorm.config";
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -12,7 +13,8 @@ import { typeOrmConfig } from "./config/typeorm.config";
       autoSchemaFile: true // generate a schema based on ts type 
     }),
     LessonModule,
-    StudentModule
+    StudentModule,
+    AuthModule
   ],
   controllers: [],
   providers: [],
